@@ -1,5 +1,5 @@
 <?php
-// ১. ডাটা ফেচ করা
+
 add_action('wp_ajax_fetch_users', 'ajax_fetch_users_handler');
 add_action('wp_ajax_nopriv_fetch_users', 'ajax_fetch_users_handler');
 
@@ -24,7 +24,7 @@ function ajax_fetch_users_handler() {
     wp_die(); 
 }
 
-// ২. ডাটা সেভ/আপডেট করা
+
 add_action('wp_ajax_save_user_action', 'ajax_save_user_handler');
 function ajax_save_user_handler() {
     check_ajax_referer('user_crud_nonce', 'security');
@@ -46,7 +46,7 @@ function ajax_save_user_handler() {
     }
 }
 
-// ৩. ডিলিট করা
+
 add_action('wp_ajax_delete_user_action', 'ajax_delete_user_handler');
 function ajax_delete_user_handler() {
     check_ajax_referer('user_crud_nonce', 'security');
@@ -55,7 +55,7 @@ function ajax_delete_user_handler() {
     wp_send_json_success('Deleted!');
 }
 
-// ৪. সিঙ্গেল ডাটা ফেচ (এডিট এর জন্য)
+
 add_action('wp_ajax_get_single_user', 'ajax_get_single_user_handler');
 function ajax_get_single_user_handler() {
     global $wpdb;

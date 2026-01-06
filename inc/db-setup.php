@@ -15,5 +15,5 @@ function my_theme_create_db_table() {
     require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
     dbDelta($sql);
 }
-// থিম অ্যাক্টিভেট হওয়ার সময় রান হবে
+
 add_action('after_setup_theme', 'my_theme_create_db_table');

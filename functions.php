@@ -11,7 +11,7 @@ function my_theme_enqueue_assets()
 
     /**
      * Tailwind CSS (Compiled)
-     * ❌ CDN ব্যবহার করবো না
+     * 
      */
     $tailwind_file = $theme_dir . '/src/output.css';
     if (file_exists($tailwind_file)) {
