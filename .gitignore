@@ -1,0 +1,51 @@
+
+# Node.js
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+.pnp.cjs
+
+# Production build artifacts
+dist
+build
+.next
+.nuxt
+.output
+out
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Editor directories and files
+.vscode
+.idea
+*.suo
+*.ntvs
+*.njsproj
+*.sln
+
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+
+
+# Optional caches
+.npm
+.yarn-cache
+.eslintcache
+.rpt2_cache
+.tsbuildinfo
+.webpack_cache
+.nx/cache
+
+# IDE specific files
+.idea/ # Already covered in Node.js section
+.vscode/ # Already covered in Node.js section
+*.iml
+.DS_Store
+
+# OS generated files
+.DS_Store
+.Thumbs.db
